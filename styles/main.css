@@ -1,0 +1,240 @@
+:root {
+    --primary: #ff9800;
+    --primary-dark: #ff5722;
+    --background: #181818;
+    --header-bg: #232323;
+    --menu-bg: #232323;
+    --border: #333;
+    --shadow: 0 2px 16px rgba(0,0,0,0.24);
+    --radius: 16px;
+    --accent: #2d2d2d;
+    --text: #fff;
+    --subtle: #bbb;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--header-bg);
+    box-shadow: var(--shadow);
+    padding: 32px 0 16px 0;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.header-note {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--primary-dark);
+    background: transparent;
+    margin-bottom: 6px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.menu {
+    background: var(--menu-bg);
+    margin: 0 auto 32px auto;
+    max-width: 800px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 32px 24px 48px 24px;
+}
+
+.menu h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: var(--primary-dark);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.menu h3 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.menu hr {
+    border: none;
+    border-top: 1.5px solid var(--border);
+    margin: 32px 0 24px 0;
+}
+
+.menu table {
+    margin: 0 auto 8px auto;
+    border-collapse: collapse;
+    width: 100%;
+    background: var(--accent);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.menu th, .menu td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    font-size: 1rem;
+}
+
+.menu th {
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.menu td {
+    background: #232323; /* dark grey for dark mode */
+    color: var(--text);
+}
+
+/* Table backgrounds for light mode */
+body.light-mode .menu table {
+    background: var(--accent);
+}
+
+body.light-mode .menu td {
+    background: #fff;
+    color: var(--text);
+}
+
+.menu ul {
+    text-align: left;
+    margin: 0 0 0 24px;
+    padding: 0 0 0 18px;
+    font-size: 1rem;
+}
+
+.menu ul li {
+    margin-bottom: 4px;
+    line-height: 1.6;
+}
+
+#order-button,
+.order-button {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 18px 48px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 4px 24px rgba(255,87,34,0.15);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+#order-button:hover,
+.order-button:hover {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+    box-shadow: 0 8px 32px rgba(255,87,34,0.22);
+    transform: translateX(-50%) scale(1.04);
+}
+
+/* DARK MODE (default) */
+
+/* LIGHT MODE OVERRIDES */
+body.light-mode {
+    --primary: #ff5722;
+    --primary-dark: #e64a19;
+    --background: #fff8f4;
+    --header-bg: #fff;
+    --menu-bg: #fff;
+    --border: #ececec;
+    --shadow: 0 2px 16px rgba(0,0,0,0.07);
+    --accent: #ffe0b2;
+    --text: #222;
+    --subtle: #888;
+}
+
+/* DARK/LIGHT MODE SWITCH BUTTON */
+#mode-switch {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 100;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    box-shadow: 0 4px 24px rgba(255,87,34,0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+#mode-switch:hover {
+    background: var(--primary-dark);
+    box-shadow: 0 8px 32px rgba(255,87,34,0.22);
+    transform: scale(1.08);
+}
+
+/* Prevent overlap with order button on mobile */
+@media (max-width: 600px) {
+    #mode-switch {
+        bottom: 80px;
+        right: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+    }
+}
+
+.category {
+    margin-bottom: 32px;
+}
+
+.category-img {
+    display: block;
+    margin: 0 auto 16px auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    background: #222;
+    border: 2px solid var(--border);
+}
+
+/* Responsive image size */
+@media (max-width: 600px) {
+    .category-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    }
+}
