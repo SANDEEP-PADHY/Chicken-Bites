@@ -1,268 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Bites</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Grilli - Amazing & Delicious Food</title>
+  <meta name="title" content="Grilli - Amazing & Delicious Food">
+  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
 </head>
-<body>
-    <header>
-        <div class="header-note">
-            (only on sundays order before 4pm receive order at main gate 7-7:30pm)
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Arabian Chickenbites</p>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <div id="header-placeholder"></div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
+            standard dummy text ever.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Fried Chicken</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Pizza</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Shawarma</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
         </div>
-        <h1>Chicken Bites</h1>
-    </header>
-    <main>
-        <section class="menu">
-            <h2>🍗 <strong>ARABIAN CHICKEN BITES – MENU</strong></h2>
-            <hr>
-            <!-- Shawarma -->
-            <div class="category">
-                <img class="category-img" src="images/shawarma.jpg" alt="Shawarma">
-                <h3><strong>SHAWARMA</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>Price</th></tr>
-                    <tr><td>Chicken Samoli</td><td>₹50</td></tr>
-                    <tr><td>Chicken Khaboos</td><td>₹70</td></tr>
-                    <tr><td>Chicken Crispy Khaboos</td><td>₹80</td></tr>
-                    <tr><td>Afghani Khaboos</td><td>₹80</td></tr>
-                    <tr><td>Tandoori Mayo</td><td>₹80</td></tr>
-                    <tr><td>Paneer Shawarma</td><td>₹100</td></tr>
-                    <tr><td>Open Shawarma (M / L)</td><td>₹190 / ₹250</td></tr>
-                </table>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+
+            <p class="section-text">
+              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+            </p>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
             </div>
-            <hr>
-            <!-- Burger -->
-            <div class="category">
-                <img class="category-img" src="images/burger.jpg" alt="Burger">
-                <h3><strong>BURGER</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>Price</th></tr>
-                    <tr><td>Veg. Burger</td><td>₹50</td></tr>
-                    <tr><td>Chicken Crispy Burger</td><td>₹70</td></tr>
-                    <tr><td>Chicken Zinger Burger</td><td>₹80</td></tr>
-                    <tr><td>Chicken Peri Peri Burger</td><td>₹80</td></tr>
-                    <tr><td>Chicken American Burger</td><td>₹80</td></tr>
-                    <tr><td>Chicken Tandoori Burger</td><td>₹90</td></tr>
-                    <tr><td>Chicken Mighty Burger</td><td>₹110</td></tr>
-                    <tr><td>Chicken BBQ Burger</td><td>₹120</td></tr>
-                    <tr><td>Chicken Cheese Brust Burger</td><td>₹120</td></tr>
-                    <tr><td>Chicken Korean BBQ Burger</td><td>₹120</td></tr>
-                    <tr><td>Chicken Wiggity Burger</td><td>₹120</td></tr>
-                    <tr><td>Chicken Double Smash Burger</td><td>₹180</td></tr>
-                    <tr><td>Chicken Arabian Burger</td><td>₹240</td></tr>
-                    <tr><td>Add on Cheese</td><td>₹20</td></tr>
-                </table>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
             </div>
-            <hr>
-            <!-- Chicken Pizza -->
-            <div class="category">
-                <img class="category-img" src="images/pizza.jpg" alt="Chicken Pizza">
-                <h3><strong>CHICKEN PIZZA (7” / 9”)</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>7"</th><th>9"</th></tr>
-                    <tr><td>Chicken Pizza</td><td>₹170</td><td>₹230</td></tr>
-                    <tr><td>Chicken Shawarma Pizza</td><td>₹180</td><td>₹240</td></tr>
-                    <tr><td>Chicken Popcorn Pizza</td><td>₹180</td><td>₹240</td></tr>
-                    <tr><td>Chicken BBQ Pizza</td><td>₹180</td><td>₹240</td></tr>
-                    <tr><td>Chicken Makhani Pizza</td><td>₹190</td><td>₹250</td></tr>
-                    <tr><td>Chicken Cheesy Pizza</td><td>₹200</td><td>₹260</td></tr>
-                    <tr><td>Chicken Double Cheesy Pizza</td><td>₹240</td><td>₹300</td></tr>
-                </table>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">chicken bites special</p>
+
+            <h2 class="headline-1 section-title">Exclusive combos</h2>
+
+            <p class="section-text">
+              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+            </p>
+
+            <a href="#menu" class="btn btn-primary">
+              <span class="text text-1">Explore Now</span>
+
+              <span class="text text-2" aria-hidden="true">Explore Now</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Categories</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Shawarma.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  SHAWARMA
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Pizzza.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  PIZZA
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Burger.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  BURGER
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Fried Chicken.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  FRIED CHICKEN
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Fish.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  FISH
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Fries.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  FRIES
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Box Meal.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  BOX MEAL
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="card" style="background-image: url('./assets/images/category images/Twister.png'); background-size: cover; background-position: center;">
+                <p class="heading">
+                  TWISTERS
+                </p>
+                <p class="restaurant-name">THE ARABIAN</p>
+                <p class="restaurant-name">CHICKEN BITES</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section menu bg-black-10" aria-label="menu">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Explore All</p>
+
+          
+
+          <div style="display: flex; justify-content: center; align-items: center; gap: 50px; padding: 40px; flex-wrap: wrap;">
+            <div class="book">
+              <p>VIEW NOW!!</p>
+              <div class="cover">
+                <p>MENU</p>
+              </div>
             </div>
-            <hr>
-            <!-- Veg Pizza -->
-            <div class="category">
-                <img class="category-img" src="images/pizza.jpg" alt="Veg Pizza">
-                <h3><strong>VEG PIZZA (7” / 9”)</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>7"</th><th>9"</th></tr>
-                    <tr><td>Veggy Pizza</td><td>₹130</td><td>₹180</td></tr>
-                    <tr><td>Margherita Pizza</td><td>₹130</td><td>₹180</td></tr>
-                    <tr><td>Cheesy Corn Pizza</td><td>₹150</td><td>₹200</td></tr>
-                    <tr><td>Paneer Pizza</td><td>₹190</td><td>₹250</td></tr>
-                    <tr><td>Paneer Makhani Pizza</td><td>₹200</td><td>₹260</td></tr>
-                </table>
+            
+            <div style="max-width: 400px; color: var(--white);">
+              <h3 class="headline-2" style="margin-bottom: 20px;">Explore Our Menu</h3>
+              <p class="section-text" style="margin-bottom: 15px;">
+                Discover our wide range of delicious offerings, from classic favorites to exciting new additions. Each dish is crafted with care using the finest ingredients.
+              </p>
+              <p class="section-text">
+                Click on the menu card to view our complete selection and find your next favorite meal!
+              </p>
             </div>
-            <hr>
-            <!-- Twister -->
-            <div class="category">
-                <img class="category-img" src="images/twister.jpg" alt="Twister">
-                <h3><strong>TWISTER</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>Price</th></tr>
-                    <tr><td>Veg. Twister</td><td>₹70</td></tr>
-                    <tr><td>Paneer Twister</td><td>₹90</td></tr>
-                    <tr><td>Chicken Peri Peri Roll</td><td>₹90</td></tr>
-                    <tr><td>Chicken BBQ Roll</td><td>₹110</td></tr>
-                    <tr><td>Chicken Crispy Roll</td><td>₹120</td></tr>
-                    <tr><td>Chicken Garlic Roll</td><td>₹120</td></tr>
-                    <tr><td>Chicken Tandoori Roll</td><td>₹120</td></tr>
-                    <tr><td>Korean BBQ Roll</td><td>₹130</td></tr>
-                    <tr><td>Chicken Cheesy Roll</td><td>₹140</td></tr>
-                </table>
-            </div>
-            <hr>
-            <!-- Box Items -->
-            <div class="category">
-                <img class="category-img" src="images/box.jpg" alt="Box Items">
-                <h3><strong>BOX ITEMS</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>Price</th></tr>
-                    <tr><td>Chicken Salad</td><td>₹160</td></tr>
-                    <tr><td>Crispy Chicken Salad</td><td>₹200</td></tr>
-                    <tr><td>Drumstick (10 pcs)</td><td>₹360</td></tr>
-                    <tr><td>Wings (20 pcs)</td><td>₹360</td></tr>
-                    <tr><td>Lollipop (20 pcs)</td><td>₹360</td></tr>
-                </table>
-            </div>
-            <hr>
-            <!-- Fries -->
-            <div class="category">
-                <img class="category-img" src="images/fries.jpg" alt="Fries">
-                <h3><strong>FRIES</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>Price</th></tr>
-                    <tr><td>French Fries</td><td>₹60</td></tr>
-                    <tr><td>Peri Peri Fries</td><td>₹80</td></tr>
-                    <tr><td>Cheesy Fries</td><td>₹100</td></tr>
-                    <tr><td>BBQ Fries</td><td>₹80</td></tr>
-                    <tr><td>Cheesy Chicken Fries</td><td>₹120</td></tr>
-                </table>
-            </div>
-            <hr>
-            <!-- Brust Chicken -->
-            <div class="category">
-                <img class="category-img" src="images/brust chicken.jpg" alt="Brust Chicken">
-                <h3><strong>BRUST CHICKEN</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>Price</th></tr>
-                    <tr><td>Chicken Popcorn (12 pcs / 20 pcs)</td><td>₹70 / ₹110</td></tr>
-                    <tr><td>Chicken Strips (6 pcs)</td><td>₹220</td></tr>
-                    <tr><td>Chicken Nuggets (6 pcs)</td><td>₹120</td></tr>
-                    <tr><td>Chicken Wings (4 pcs / 8 pcs)</td><td>₹110 / ₹160</td></tr>
-                    <tr><td>Chicken Drumstick (2 pcs / 4 pcs)</td><td>₹120 / ₹180</td></tr>
-                    <tr><td>Chicken Lollipop (6 pcs)</td><td>₹160</td></tr>
-                    <tr><td>Chicken Brust (4 pcs / 6 pcs)</td><td>₹300 / ₹540</td></tr>
-                </table>
-            </div>
-            <hr>
-            <!-- Fish -->
-            <div class="category">
-                <img class="category-img" src="images/fish.jpeg" alt="Fish">
-                <h3><strong>FISH</strong></h3>
-                <table>
-                    <tr><th>Item</th><th>Price</th></tr>
-                    <tr><td>Fish Burger</td><td>₹100</td></tr>
-                    <tr><td>Fish Wrap</td><td>₹160</td></tr>
-                    <tr><td>Fish French Fries</td><td>₹160</td></tr>
-                    <tr><td>Fish Popcorn (12 pcs / 20 pcs)</td><td>₹100 / ₹160</td></tr>
-                    <tr><td>Fish (Full)</td><td>₹360</td></tr>
-                    <tr><td>Finger Fish (4 pcs / 6 pcs)</td><td>₹180 / ₹250</td></tr>
-                </table>
-            </div>
-            <hr>
-            <!-- Meal Combos -->
-            <h2>🍔 <strong>MEAL COMBOS (with updated prices)</strong></h2>
-            <hr>
-            <div class="category">
-                <img class="category-img" src="images/combo.jpg" alt="Meal Combos">
-                <h3><strong>ARABIAN MEAL – ₹290</strong></h3>
-                <ul>
-                    <li>Drumstick – 1</li>
-                    <li>Popcorn – 6 pcs</li>
-                    <li>Lollipop – 2 pcs</li>
-                    <li>Nuggets – 2 pcs</li>
-                    <li>Crispy Burger – 1</li>
-                    <li>Dip – 2</li>
-                    <li>Coldrink – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>FRIENDS MEAL – ₹540</strong></h3>
-                <ul>
-                    <li>Drumstick – 2 pcs</li>
-                    <li>Popcorn – 10 pcs</li>
-                    <li>Strips – 2 pcs</li>
-                    <li>Wings – 4 pcs</li>
-                    <li>Crispy Twister – 2</li>
-                    <li>Fries – 1</li>
-                    <li>Dip – 2</li>
-                    <li>Coldrink (1L) – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>CHICKEN STAR MEAL – ₹380</strong></h3>
-                <ul>
-                    <li>Popcorn – 6 pcs</li>
-                    <li>Wings – 4 pcs</li>
-                    <li>Lollipop – 2 pcs</li>
-                    <li>Brust – 1</li>
-                    <li>Crispy Burger – 1</li>
-                    <li>Dip – 2</li>
-                    <li>Coldrink (500ml) – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>BBQ MEAL – ₹300</strong></h3>
-                <ul>
-                    <li>BBQ Twister – 1</li>
-                    <li>BBQ Burger – 1</li>
-                    <li>Chicken Wings – 3 pcs</li>
-                    <li>Dip – 1</li>
-                    <li>Coldrink – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>ZINGER MEAL – ₹210</strong></h3>
-                <ul>
-                    <li>Zinger Burger – 1</li>
-                    <li>Peri Peri Burger – 1</li>
-                    <li>Wings – 3 pcs</li>
-                    <li>Dip – 1</li>
-                    <li>Coldrink – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>SOLO KING MEAL – ₹120</strong></h3>
-                <ul>
-                    <li>Crispy Burger – 1</li>
-                    <li>Wings – 2 pcs</li>
-                    <li>Dip – 1</li>
-                    <li>Coldrink – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>CHEESY MEAL – ₹370</strong></h3>
-                <ul>
-                    <li>Cheesy Chicken Pizza – 1</li>
-                    <li>Peri Peri Burger – 1</li>
-                    <li>Cheesy Fries – 1</li>
-                    <li>Dip – 1</li>
-                    <li>Coldrink – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>JUMBO MEAL – ₹660</strong></h3>
-                <ul>
-                    <li>Full Chicken – 1</li>
-                    <li>Tandoori Burger – 1</li>
-                    <li>Fries – 1</li>
-                    <li>Dip – 1</li>
-                    <li>Coldrink (1L) – 1</li>
-                </ul>
-                <hr>
-                <h3><strong>FINISHER MEAL – ₹690</strong></h3>
-                <ul>
-                    <li>Popcorn – 6 pcs</li>
-                    <li>Drumstick – 1 pc</li>
-                    <li>Wings – 1 pc</li>
-                    <li>Peri Peri Fries – 1</li>
-                    <li>Peri Peri Burger – 1</li>
-                    <li>Chicken Pizza – 1</li>
-                    <li>Peri Peri Twister – 1</li>
-                    <li>Dip – 2</li>
-                    <li>Coldrink (1L) – 1</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <button id="order-button" onclick="window.open('https://wa.me/919664650235','_blank')">Order Now</button>
-    <button id="mode-switch" title="Toggle light/dark mode">🌙</button>
-    <script src="scripts/main.js"></script>
+          </div>
+
+
+
+
+
+
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <div id="footer-placeholder"></div>
+
+
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
