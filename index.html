@@ -9,9 +9,54 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Grilli - Amazing & Delicious Food</title>
-  <meta name="title" content="Grilli - Amazing & Delicious Food">
-  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+  <title>The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara</title>
+  <meta name="title" content="The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara">
+  <meta name="description" content="Taste authentic Arabian cuisine at The Arabian Chicken Bites in Vadodara. We offer crispy fried chicken, delicious pizza, mouth-watering shawarma, burgers, fries and more. Fresh ingredients, fast delivery. Order online now!">
+  <meta name="keywords" content="chicken restaurant Vadodara, fried chicken, shawarma, pizza, Arabian food, fast food Ajwa Road">
+  
+  <!-- OG Tags for Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arabianchickenbites.com">
+  <meta property="og:title" content="The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara">
+  <meta property="og:description" content="Taste authentic Arabian cuisine at The Arabian Chicken Bites in Vadodara. Fresh ingredients, authentic flavors, fast delivery.">
+  <meta property="og:image" content="https://arabianchickenbites.com/assets/images/hero-slider-1.jpg">
+  
+  <!-- Twitter Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://arabianchickenbites.com">
+  <meta property="twitter:title" content="The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara">
+  <meta property="twitter:description" content="Taste authentic Arabian cuisine at The Arabian Chicken Bites in Vadodara. Fresh ingredients, authentic flavors, fast delivery.">
+  <meta property="twitter:image" content="https://arabianchickenbites.com/assets/images/hero-slider-1.jpg">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://arabianchickenbites.com">
+
+  <!-- Schema.org Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Arabian Chicken Bites",
+    "image": "https://arabianchickenbites.com/assets/images/hero-slider-1.jpg",
+    "@id": "https://arabianchickenbites.com",
+    "url": "https://arabianchickenbites.com",
+    "menu": "https://arabianchickenbites.com/menu.html",
+    "servesCuisine": ["Arabian", "Fast Food", "Pizza", "Fried Chicken"],
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "B-2, Memon Shopping Ctr, Ajwa Road",
+      "addressLocality": "Vadodara",
+      "addressRegion": "Gujarat",
+      "postalCode": "390019",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/arabianchickenbites/",
+      "https://maps.app.goo.gl/hwkK8eyyUbxBYFuh7?g_st=ic"
+    ]
+  }
+  </script>
 
   <!-- 
     - favicon
@@ -24,6 +69,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  
+  <!-- 
+    - DNS prefetch for external resources
+  -->
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
   <!-- 
     - custom css link
@@ -96,7 +147,7 @@
               Come with family & feel the joy of mouthwatering food
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="menu.html" class="btn btn-primary slider-reveal">
               <span class="text text-1">View Our Menu</span>
 
               <span class="text text-2" aria-hidden="true">View Our Menu</span>
@@ -112,16 +163,16 @@
 
             <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
 
-            <h1 class="display-1 hero-title slider-reveal">
+            <h2 class="display-1 hero-title slider-reveal">
               Flavors Inspired by <br>
               the Seasons
-            </h1>
+            </h2>
 
             <p class="body-2 hero-text slider-reveal">
               Come with family & feel the joy of mouthwatering food
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="menu.html" class="btn btn-primary slider-reveal">
               <span class="text text-1">View Our Menu</span>
 
               <span class="text text-2" aria-hidden="true">View Our Menu</span>
@@ -137,16 +188,16 @@
 
             <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
 
-            <h1 class="display-1 hero-title slider-reveal">
+            <h2 class="display-1 hero-title slider-reveal">
               Where every flavor <br>
               tells a story
-            </h1>
+            </h2>
 
             <p class="body-2 hero-text slider-reveal">
               Come with family & feel the joy of mouthwatering food
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
+            <a href="menu.html" class="btn btn-primary slider-reveal">
               <span class="text text-1">View Our Menu</span>
 
               <span class="text text-2" aria-hidden="true">View Our Menu</span>
@@ -182,8 +233,7 @@
           <h2 class="headline-1 section-title">We Offer Top Notch</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-            standard dummy text ever.
+            Experience the finest selection of crispy fried chicken, authentic shawarma, gourmet pizzas, and more. Every dish is crafted with premium ingredients and served with passion to deliver unforgettable flavors.
           </p>
 
           <ul class="grid-list">
@@ -191,9 +241,9 @@
             <li>
               <div class="service-card">
 
-                <a href="#" class="has-before hover:shine">
+                <a href="menu.html#fried-chicken" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Crispy Fried Chicken at The Arabian Chicken Bites Vadodara"
                       class="img-cover">
                   </figure>
                 </a>
@@ -201,10 +251,10 @@
                 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="#">Fried Chicken</a>
+                    <a href="menu.html#fried-chicken">Fried Chicken</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <a href="menu.html#fried-chicken" class="btn-text hover-underline label-2">View Menu</a>
 
                 </div>
 
@@ -214,9 +264,9 @@
             <li>
               <div class="service-card">
 
-                <a href="#" class="has-before hover:shine">
+                <a href="menu.html#pizza" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Delicious Fresh Pizza at The Arabian Chicken Bites"
                       class="img-cover">
                   </figure>
                 </a>
@@ -224,10 +274,10 @@
                 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="#">Pizza</a>
+                    <a href="menu.html#pizza">Pizza</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <a href="menu.html#pizza" class="btn-text hover-underline label-2">View Menu</a>
 
                 </div>
 
@@ -237,9 +287,9 @@
             <li>
               <div class="service-card">
 
-                <a href="#" class="has-before hover:shine">
+                <a href="menu.html#shawarma" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Authentic Arabian Shawarma in Vadodara"
                       class="img-cover">
                   </figure>
                 </a>
@@ -247,10 +297,10 @@
                 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="#">Shawarma</a>
+                    <a href="menu.html#shawarma">Shawarma</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <a href="menu.html#shawarma" class="btn-text hover-underline label-2">View Menu</a>
 
                 </div>
 
@@ -282,19 +332,17 @@
 
             <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
-            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+              At Chicken Bites, we believe great food brings people together. Founded with a passion for authentic flavors and quality ingredients, we've been serving our community with mouthwatering chicken specialties, fresh pizzas, crispy fries, and delicious shawarma. Each recipe is perfected with care, ensuring every bite delivers satisfaction and joy.
             </p>
 
           </div>
 
           <figure class="about-banner">
 
-            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="The Arabian Chicken Bites Restaurant - Best Food in Vadodara"
               class="w-100" data-parallax-item data-parallax-speed="1">
 
             <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
@@ -324,7 +372,7 @@
       <section class="special-dish text-center" aria-labelledby="dish-label">
 
         <div class="special-dish-banner">
-          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="Special House Specialty Chicken Dish at The Arabian Chicken Bites"
             class="img-cover">
         </div>
 
@@ -335,14 +383,13 @@
 
             <p class="section-subtitle label-2">chicken bites special</p>
 
-            <h2 class="headline-1 section-title">Exclusive combos</h2>
+            <h2 class="headline-1 section-title">Exclusive Combos</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+              Discover our specially curated combo meals that bring together your favorite items at unbeatable prices. From hearty box meals to family feast deals, we've got something special for everyone. Perfect for sharing or treating yourself!
             </p>
 
-            <a href="#menu" class="btn btn-primary">
+            <a href="menu.html" class="btn btn-primary">
               <span class="text text-1">Explore Now</span>
 
               <span class="text text-2" aria-hidden="true">Explore Now</span>
@@ -375,83 +422,99 @@
           <ul class="grid-list">
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Shawarma.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  SHAWARMA
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#shawarma" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Shawarma.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    SHAWARMA
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Pizzza.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  PIZZA
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#pizza" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Pizzza.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    PIZZA
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Burger.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  BURGER
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#burger" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Burger.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    BURGER
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Fried Chicken.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  FRIED CHICKEN
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#fried-chicken" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Fried Chicken.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    FRIED CHICKEN
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Fish.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  FISH
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#fish" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Fish.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    FISH
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Fries.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  FRIES
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#fries" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Fries.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    FRIES
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Box Meal.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  BOX MEAL
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#box-meal" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Box Meal.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    BOX MEAL
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
             <li>
-              <div class="card" style="background-image: url('./assets/images/category images/Twister.png'); background-size: cover; background-position: center;">
-                <p class="heading">
-                  TWISTERS
-                </p>
-                <p class="restaurant-name">THE ARABIAN</p>
-                <p class="restaurant-name">CHICKEN BITES</p>
-              </div>
+              <a href="menu.html#twisters" style="text-decoration: none; display: block;">
+                <div class="card" style="background-image: url('./assets/images/category images/Twister.png'); background-size: cover; background-position: center; cursor: pointer;">
+                  <p class="heading">
+                    TWISTERS
+                  </p>
+                  <p class="restaurant-name">THE ARABIAN</p>
+                  <p class="restaurant-name">CHICKEN BITES</p>
+                </div>
+              </a>
             </li>
 
           </ul>
@@ -475,12 +538,14 @@
           
 
           <div style="display: flex; justify-content: center; align-items: center; gap: 50px; padding: 40px; flex-wrap: wrap;">
-            <div class="book">
-              <p>VIEW NOW!!</p>
-              <div class="cover">
-                <p>MENU</p>
+            <a href="menu.html" style="text-decoration: none;">
+              <div class="book">
+                <p>VIEW NOW!!</p>
+                <div class="cover">
+                  <p>MENU</p>
+                </div>
               </div>
-            </div>
+            </a>
             
             <div style="max-width: 400px; color: var(--white);">
               <h3 class="headline-2" style="margin-bottom: 20px;">Explore Our Menu</h3>
@@ -595,13 +660,13 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 
   <!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 
 </body>
 

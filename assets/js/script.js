@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 /**
  * LOAD HEADER AND FOOTER
  */
@@ -11,7 +9,6 @@ fetch('./components/header.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('header-placeholder').innerHTML = data;
-    // Initialize navbar functionality after header is loaded
     initNavbar();
     initHeader();
   })
@@ -25,25 +22,16 @@ fetch('./components/footer.html')
   })
   .catch(error => console.error('Error loading footer:', error));
 
-
-
 /**
  * PRELOAD
- * 
- * loading will show for 2 seconds to ensure smooth page load
  */
 
 const preloader = document.querySelector("[data-preaload]");
 
 window.addEventListener("load", function () {
-  // Wait for 1 second before hiding preloader
-  setTimeout(function () {
-    preloader.classList.add("loaded");
-    document.body.classList.add("loaded");
-  }, 1000);
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
 });
-
-
 
 /**
  * add event listener on multiple elements
@@ -86,6 +74,7 @@ const initHeader = function () {
   const backTopBtn = document.querySelector("[data-back-top-btn]");
 
   let lastScrollPos = 0;
+  let ticking = false;
 
   const hideHeader = function () {
     const isScrollBottom = lastScrollPos < window.scrollY;
@@ -94,20 +83,27 @@ const initHeader = function () {
     } else {
       header.classList.remove("hide");
     }
-
     lastScrollPos = window.scrollY;
   }
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY >= 50) {
-      header.classList.add("active");
-      if (backTopBtn) backTopBtn.classList.add("active");
-      hideHeader();
-    } else {
-      header.classList.remove("active");
-      if (backTopBtn) backTopBtn.classList.remove("active");
+  const handleScroll = function () {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        if (window.scrollY >= 50) {
+          header.classList.add("active");
+          if (backTopBtn) backTopBtn.classList.add("active");
+          hideHeader();
+        } else {
+          header.classList.remove("active");
+          if (backTopBtn) backTopBtn.classList.remove("active");
+        }
+        ticking = false;
+      });
+      ticking = true;
     }
-  });
+  }
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
 }
 
 
@@ -183,20 +179,24 @@ window.addEventListener("load", autoSlide);
 const parallaxItems = document.querySelectorAll("[data-parallax-item]");
 
 let x, y;
+let parallaxTicking = false;
 
 window.addEventListener("mousemove", function (event) {
+  if (!parallaxTicking) {
+    window.requestAnimationFrame(function() {
+      x = (event.clientX / window.innerWidth * 10) - 5;
+      y = (event.clientY / window.innerHeight * 10) - 5;
 
-  x = (event.clientX / window.innerWidth * 10) - 5;
-  y = (event.clientY / window.innerHeight * 10) - 5;
+      x = x - (x * 2);
+      y = y - (y * 2);
 
-  // reverse the number eg. 20 -> -20, -5 -> 5
-  x = x - (x * 2);
-  y = y - (y * 2);
-
-  for (let i = 0, len = parallaxItems.length; i < len; i++) {
-    x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
-    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
-    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+      for (let i = 0, len = parallaxItems.length; i < len; i++) {
+        const speedX = x * Number(parallaxItems[i].dataset.parallaxSpeed);
+        const speedY = y * Number(parallaxItems[i].dataset.parallaxSpeed);
+        parallaxItems[i].style.transform = `translate3d(${speedX}px, ${speedY}px, 0px)`;
+      }
+      parallaxTicking = false;
+    });
+    parallaxTicking = true;
   }
-
-});
+}, { passive: true });

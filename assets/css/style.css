@@ -2429,3 +2429,229 @@ textarea.input-field {
   color: var(--eerie-black-1);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/*-----------------------------------*\
+  #ADDITIONAL MOBILE RESPONSIVE STYLES
+\*-----------------------------------*/
+
+@media (max-width: 768px) {
+  
+  /* Footer mobile responsive */
+  .footer-top.grid-list {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    padding-inline: 20px;
+  }
+
+  .footer-list {
+    padding-inline: 20px;
+  }
+
+  /* Hero section */
+  .hero .slider-item {
+    padding-block: 120px 60px;
+  }
+
+  .hero-title br {
+    display: none;
+  }
+
+  /* Service cards grid */
+  .service .grid-list {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+  /* About section */
+  .about .container {
+    display: block !important;
+  }
+
+  .about-content {
+    margin-block-start: 40px;
+  }
+
+  .about-banner {
+    margin-inline: auto;
+  }
+
+  /* Special dish */
+  .special-dish .container {
+    display: block !important;
+  }
+
+  .special-dish-content {
+    margin-block-end: 40px;
+  }
+
+  .special-dish-banner {
+    margin-inline: auto;
+  }
+
+  /* Menu cards */
+  .menu .grid-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px 15px;
+    padding: 0 20px;
+  }
+
+  /* Features section */
+  .features .grid-list {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+  .features .section-title {
+    font-size: 3.5rem;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .feature-card .card-icon img {
+    width: 80px;
+    height: auto;
+  }
+
+  .features .shape {
+    display: none !important;
+  }
+
+  /* Book menu */
+  .book {
+    width: 200px !important;
+    height: 280px !important;
+  }
+
+  /* Event section */
+  .event .container {
+    flex-direction: column !important;
+  }
+
+  .event-content {
+    margin-block-start: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  /* Single column menu cards */
+  .menu .grid-list {
+    grid-template-columns: 1fr !important;
+    padding: 0 15px;
+  }
+
+  .card {
+    max-width: 280px;
+  }
+
+  /* Footer extra small */
+  .footer-brand .logo img {
+    width: 280px;
+  }
+
+  /* Hero text sizes */
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    padding-inline: 20px;
+  }
+
+  /* Features section for small screens */
+  .features .section-title {
+    font-size: 3rem;
+  }
+
+  .feature-card {
+    padding: 25px 15px;
+  }
+
+  .feature-card .card-icon img {
+    width: 70px;
+  }
+
+  .feature-card .card-title {
+    font-size: 2rem;
+  }
+
+  /* Smaller book */
+  .book {
+    width: 170px !important;
+    height: 240px !important;
+  }
+
+  .cover p,
+  .book > p {
+    font-size: 2rem !important;
+  }
+
+  /* Button adjustments */
+  .btn {
+    padding: 12px 30px;
+    font-size: 1.3rem;
+  }
+
+  /* Section spacing */
+  .section {
+    padding-block: 50px;
+  }
+
+  /* Containers */
+  .container {
+    padding-inline: 20px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  
+  /* Very small screens */
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  /* Features section for very small screens */
+  .features .section-title {
+    font-size: 2.5rem;
+  }
+
+  .feature-card {
+    padding: 20px 10px;
+  }
+
+  .feature-card .card-icon img {
+    width: 60px;
+  }
+
+  .feature-card .card-title {
+    font-size: 1.8rem;
+  }
+
+  .book {
+    width: 150px !important;
+    height: 220px !important;
+  }
+
+  .cover p,
+  .book > p {
+    font-size: 1.6rem !important;
+  }
+
+  .card {
+    max-width: 240px;
+  }
+
+  .footer-brand .logo img {
+    width: 220px;
+  }
+
+}
