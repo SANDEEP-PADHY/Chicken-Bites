@@ -13,20 +13,24 @@
   <meta name="title" content="The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara">
   <meta name="description" content="Taste authentic Arabian cuisine at The Arabian Chicken Bites in Vadodara. We offer crispy fried chicken, delicious pizza, mouth-watering shawarma, burgers, fries and more. Fresh ingredients, fast delivery. Order online now!">
   <meta name="keywords" content="chicken restaurant Vadodara, fried chicken, shawarma, pizza, Arabian food, fast food Ajwa Road">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#0c1317">
   
   <!-- OG Tags for Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arabianchickenbites.com">
   <meta property="og:title" content="The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara">
   <meta property="og:description" content="Taste authentic Arabian cuisine at The Arabian Chicken Bites in Vadodara. Fresh ingredients, authentic flavors, fast delivery.">
+  <meta property="og:site_name" content="The Arabian Chicken Bites">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:image" content="https://arabianchickenbites.com/assets/images/hero-slider-1.jpg">
   
   <!-- Twitter Tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://arabianchickenbites.com">
-  <meta property="twitter:title" content="The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara">
-  <meta property="twitter:description" content="Taste authentic Arabian cuisine at The Arabian Chicken Bites in Vadodara. Fresh ingredients, authentic flavors, fast delivery.">
-  <meta property="twitter:image" content="https://arabianchickenbites.com/assets/images/hero-slider-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://arabianchickenbites.com">
+  <meta name="twitter:title" content="The Arabian Chicken Bites - Best Fried Chicken & Shawarma in Vadodara">
+  <meta name="twitter:description" content="Taste authentic Arabian cuisine at The Arabian Chicken Bites in Vadodara. Fresh ingredients, authentic flavors, fast delivery.">
+  <meta name="twitter:image" content="https://arabianchickenbites.com/assets/images/hero-slider-1.jpg">
 
   <!-- Canonical Tag -->
   <link rel="canonical" href="https://arabianchickenbites.com">
@@ -35,25 +39,59 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "The Arabian Chicken Bites",
-    "image": "https://arabianchickenbites.com/assets/images/hero-slider-1.jpg",
-    "@id": "https://arabianchickenbites.com",
-    "url": "https://arabianchickenbites.com",
-    "menu": "https://arabianchickenbites.com/menu.html",
-    "servesCuisine": ["Arabian", "Fast Food", "Pizza", "Fried Chicken"],
-    "priceRange": "₹₹",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "B-2, Memon Shopping Ctr, Ajwa Road",
-      "addressLocality": "Vadodara",
-      "addressRegion": "Gujarat",
-      "postalCode": "390019",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://www.instagram.com/arabianchickenbites/",
-      "https://maps.app.goo.gl/hwkK8eyyUbxBYFuh7?g_st=ic"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://arabianchickenbites.com/#website",
+        "url": "https://arabianchickenbites.com/",
+        "name": "The Arabian Chicken Bites",
+        "alternateName": [
+          "Arabian Chicken Bites",
+          "ArabianChickenBites",
+          "Chicken Bites Vadodara"
+        ],
+        "inLanguage": "en-IN",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://arabianchickenbites.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "publisher": { "@id": "https://arabianchickenbites.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://arabianchickenbites.com/#organization",
+        "name": "The Arabian Chicken Bites",
+        "url": "https://arabianchickenbites.com/",
+        "logo": "https://arabianchickenbites.com/assets/images/logo.svg",
+        "sameAs": [
+          "https://www.instagram.com/arabianchickenbites/",
+          "https://maps.app.goo.gl/hwkK8eyyUbxBYFuh7?g_st=ic"
+        ]
+      },
+      {
+        "@type": "Restaurant",
+        "@id": "https://arabianchickenbites.com/#restaurant",
+        "name": "The Arabian Chicken Bites",
+        "url": "https://arabianchickenbites.com/",
+        "image": "https://arabianchickenbites.com/assets/images/hero-slider-1.jpg",
+        "servesCuisine": ["Arabian", "Fast Food", "Pizza", "Fried Chicken"],
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "B-2, Memon Shopping Ctr, Ajwa Road",
+          "addressLocality": "Vadodara",
+          "addressRegion": "Gujarat",
+          "postalCode": "390019",
+          "addressCountry": "IN"
+        },
+        "hasMenu": "https://arabianchickenbites.com/menu.html",
+        "sameAs": [
+          "https://www.instagram.com/arabianchickenbites/",
+          "https://maps.app.goo.gl/hwkK8eyyUbxBYFuh7?g_st=ic"
+        ],
+        "parentOrganization": { "@id": "https://arabianchickenbites.com/#organization" }
+      }
     ]
   }
   </script>
@@ -61,7 +99,8 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
 
   <!-- 
     - google font link
@@ -98,7 +137,7 @@
 
   <div class="preload" data-preaload>
     <div class="circle"></div>
-    <p class="text">Arabian Chickenbites</p>
+    <p class="text">The Arabian Chicken Bites</p>
   </div>
 
 
@@ -133,7 +172,7 @@
           <li class="slider-item active" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="The Arabian Chicken Bites restaurant in Vadodara" class="img-cover">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
@@ -158,7 +197,7 @@
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="Crispy fried chicken, pizza and shawarma at The Arabian Chicken Bites" class="img-cover">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
@@ -183,7 +222,7 @@
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="Fast food and Arabian cuisine in Vadodara" class="img-cover">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
